@@ -113,9 +113,9 @@
                             </div>
 
                             <div class="form-group col-sm-4">
-                                <label for="exampleFormControlFile1">Foto de Perfil</label>
-                                <input type="file" class="form-control-file btn " id="exampleFormControlFile1">
-                            </div>
+                                <label for="avatar">Foto de Perfil</label>
+                                    <input id="avatar" type="file" class="form-control-file btn" name="avatar" value="{{ old('avatar') }}">
+
 
 
 

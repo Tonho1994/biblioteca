@@ -47,6 +47,13 @@ Route::get('/contacto', function () {
     return view('contacto');
 });
 
+Route::get('/profile', function () {
+    return view('profile');
+});
+
+
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

@@ -58,6 +58,17 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+
+.avatar{
+    height: 50px;
+    width: 40px;
+}
+
+
+
+
+
+
 article,
 aside,
 figcaption,

@@ -66,7 +66,9 @@
                             <li class="nav-item dropleft ml-auto">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle " href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->user }} <span class="caret"></span>
+                                    <img class="avatar align-center" src="{{ asset('img/avatar.svg') }}" alt="">
                                 </a>
+
 
                                 <div class="dropdown-menu " aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item " href="{{ route('logout') }}"
@@ -75,9 +77,7 @@
                                                 {{ __('Cerrar Sesion') }}
                                     </a>
 
-                                    <a class="dropdown-item " href="{{ route('home') }}"
-                                        onclick="event.preventDefault();
-                                                document.getElementById('logout-form').submit();">
+                                    <a class="dropdown-item " href="{{ route('home') }}">
                                                 {{ __('Configuración') }}
                                     </a>
 
@@ -119,7 +119,7 @@
         </nav>
 
 
-        <main style=" height: 750px;"class=" py-4">
+        <main class=" py-4">
             @yield('content')
         </main>
 

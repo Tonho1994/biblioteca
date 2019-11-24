@@ -57,6 +57,7 @@ class RegisterController extends Controller
             'fnacimiento' => ['required', 'date'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
+
         ]);
     }
 
@@ -75,8 +76,10 @@ class RegisterController extends Controller
             'user' => $data['user'],
             'tipo_usuario' => $data['tipo_usuario'],
             'fnacimiento' => $data['fnacimiento'],
+
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+
 
         ]);
     }

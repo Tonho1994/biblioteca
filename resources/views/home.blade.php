@@ -15,6 +15,8 @@
         <div class="tab-content" id="v-pills-tabContent">
             <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
 
+                <h2>Perfil de {{ $user->name }}</h2>
+                <img src="{{ asset('img/uploads/avatars/default.jpg') }}" style="width:150px; height:150px; float:left; border-radius:50%; margin-right:25px;" alt="">
 
             </div>
             <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
